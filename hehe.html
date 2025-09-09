@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Memories • Company Profile | Kasur Premium</title>
+  <meta name="description"
+    content="Memories adalah perusahaan kasur premium dengan fokus kenyamanan, kesehatan postur, dan daya tahan. Layanan retail, hotel & corporate." />
+  <meta name="keywords" content="Memories, kasur, mattress, spring bed, memory foam, hotel, premium" />
+  <meta property="og:title" content="Memories • Company Profile" />
+  <meta property="og:description"
+    content="Kasur premium: nyaman, ergonomis, dan tahan lama. Layanan retail, hotel & corporate." />
+  <meta property="og:image" content="logo-memories.png" />
+  <meta name="theme-color" content="#0b1c2e" />
+
+  <!-- Tailwind + DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- AOS (animasi scroll) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --navy: #0b1c2e;
+      --gold: #f3c96a;
+      --cyan: #5cd6e8;
+      --violet: #7c3aed;
+      --body: #475569;
+      /* abu gelap */
+      --soft: #d1d5db;
+      /* abu terang */
+    }
+
+    .brand-gradient {
+      background: linear-gradient(135deg, var(--cyan), #2563eb 40%, var(--navy));
+    }
+
+    .text-soft {
+      color: var(--soft);
+    }
+
+    .text-body {
+      color: var(--body);
+    }
+
+    .text-navy {
+      color: var(--navy);
+    }
+
+    .text-gold {
+      color: var(--gold);
+    }
+
+    .text-violet {
+      color: var(--violet);
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(8px);
+    }
+
+    .shadow-soft {
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
+    }
+
+    /* Heading default navy */
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: var(--navy);
+    }
+
+    /* Card headings tetap kontras di dark mode */
+    .card-title {
+      color: var(--navy);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-body dark:bg-gray-900 dark:text-gray-200">
+
+  <!-- NAVBAR -->
+  <header class="bg-white/90 dark:bg-gray-900/80 border-b border-gray-200/50 dark:border-gray-800/60 sticky top-0 z-50">
+    <div class="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3">
+        <img src="logo memories.png" alt="Logo Memories" class="h-16 w-auto bg-white rounded-full p-1 shadow" />
+        <span class="text-2xl font-semibold text-navy">Memories</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#profil" class="hover:text-violet">Profil</a>
+        <a href="#keunggulan" class="hover:text-violet">Keunggulan</a>
+        <a href="#produk" class="hover:text-violet">Produk</a>
+        <a href="#teknologi" class="hover:text-violet">Teknologi</a>
+        <a href="#clients" class="hover:text-violet">Clients</a>
+        <a href="#sertifikasi" class="hover:text-violet">Sertifikasi</a>
+        <a href="#kontak" class="btn btn-sm rounded-full border-none text-navy"
+          style="background:var(--gold)">Kontak</a>
+      </nav>
+      <!-- Mobile -->
+      <details class="dropdown dropdown-end md:hidden">
+        <summary class="btn btn-ghost btn-sm">Menu</summary>
+        <ul class="menu dropdown-content bg-base-100 rounded-box shadow p-2 w-52 z-50">
+          <li><a href="#profil">Profil</a></li>
+          <li><a href="#keunggulan">Keunggulan</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#teknologi">Teknologi</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#sertifikasi">Sertifikasi</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </details>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 brand-gradient opacity-90"></div>
+    <div class="max-w-screen-xl mx-auto px-6 py-24 md:py-28 text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight" data-aos="fade-up">
+        <span class="text-violet">Tidur Berkualitas</span>, Bangun Penuh <span class="text-gold">Memories</span>
+      </h1>
+      <p class="mt-5 text-lg md:text-xl text-body max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        <span class="text-violet font-semibold">Kasur premium</span> berfokus pada kenyamanan, kesehatan postur, dan
+        daya tahan. Melayani <span class="text-gold font-semibold">retail</span>, <span
+          class="text-gold font-semibold">perhotelan</span>, dan <span class="text-gold font-semibold">korporasi</span>.
+      </p>
+      <div class="mt-8 flex items-center justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+        <a href="https://youtu.be/xvFZjo5PgG0?si=gln4Klkm3vuX6-KT"
+          class="btn rounded-full border-none text-navy shadow-soft" style="background:var(--gold)">Download Profil
+          (PDF)</a>
+        <a href="#produk" class="btn btn-outline rounded-full"
+          style="color:var(--violet);border-color:var(--violet)">Lini Produk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFIL -->
+  <section id="profil" class="py-16 bg-white dark:bg-gray-800">
+    <div class="max-w-screen-xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <img src="pabrik.jpeg" alt="Kasur premium Memories" class="rounded-2xl shadow-soft" data-aos="zoom-in" />
+      <div data-aos="fade-left">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Tentang Kami</h2>
+        <p class="mb-4">
+          Sejak 2015, <strong class="text-violet">Memories</strong> memproduksi kasur premium yang memadukan teknologi
+          kenyamanan modern
+          dengan desain elegan. Produk kami digunakan keluarga Indonesia, jaringan <span
+            class="text-gold font-semibold">hotel</span>, hingga proyek <span
+            class="text-gold font-semibold">korporasi</span>.
+        </p>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="p-4 rounded-xl border bg-gray-50 dark:bg-gray-900/40">
+            <p class="text-sm opacity-70">Kapasitas Produksi</p>
+            <p class="text-xl font-semibold text-navy">15.000 unit/bulan</p>
+          </div>
+          <div class="p-4 rounded-xl border bg-gray-50 dark:bg-gray-900/40">
+            <p class="text-sm opacity-70">Jaringan Distribusi</p>
+            <p class="text-xl font-semibold text-navy">120+ toko</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEUNGGULAN -->
+  <section id="keunggulan" class="py-16">
+    <div class="max-w-screen-xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Keunggulan Kami</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card bg-white dark:bg-gray-800 shadow-lg border" data-aos="fade-up">
+          <div class="card-body">
+            <h3 class="card-title">Ergonomis</h3>
+            <p>Mendukung kurva alami tulang belakang untuk mengurangi nyeri punggung.</p>
+            <span class="mt-3 inline-block text-violet font-semibold">Support & Posture</span>
+          </div>
+        </div>
+        <div class="card bg-white dark:bg-gray-800 shadow-lg border" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-body">
+            <h3 class="card-title">Material Premium</h3>
+            <p>Memory foam, latex alami, dan pegas pocketed berkualitas.</p>
+            <span class="mt-3 inline-block text-gold font-semibold">Komponen Terbaik</span>
+          </div>
+        </div>
+        <div class="card bg-white dark:bg-gray-800 shadow-lg border" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-body">
+            <h3 class="card-title">Garansi & Layanan</h3>
+            <p>Garansi hingga 10 tahun & layanan purna jual responsif.</p>
+            <span class="mt-3 inline-block text-violet font-semibold">After-Sales Care</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUK (Overview) -->
+  <section id="produk" class="py-16 bg-white dark:bg-gray-800">
+    <div class="max-w-screen-xl mx-auto px-6">
+      <div class="flex items-end justify-between mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold">Lini Produk</h2>
+        <a href="memories-profile.pdf" class="link text-violet">Minta Katalog PDF</a>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card bg-base-100 shadow-xl border" data-aos="zoom-in">
+          <figure class="px-4 pt-4"><img src="produk.jpg" class="rounded-xl" alt="Serene Series"></figure>
+          <div class="card-body">
+            <h3 class="card-title">Serene Series</h3>
+            <p>Nyaman untuk keluarga, balance antara empuk & support.</p>
+            <div class="card-actions justify-end">
+              <span class="badge" style="background:var(--cyan)">Family</span>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border" data-aos="zoom-in" data-aos-delay="100">
+          <figure class="px-4 pt-4"><img src="produk2.jpg" class="rounded-xl" alt="Luxe Series"></figure>
+          <div class="card-body">
+            <h3 class="card-title">Luxe Series</h3>
+            <p>Lapisan memory foam premium, detail jahitan elegan.</p>
+            <div class="card-actions justify-end">
+              <span class="badge text-navy" style="background:var(--gold)">Premium</span>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border" data-aos="zoom-in" data-aos-delay="200">
+          <figure class="px-4 pt-4"><img src="produk3.jpg" class="rounded-xl" alt="Hospitality Pro"></figure>
+          <div class="card-body">
+            <h3 class="card-title">Hospitality Pro</h3>
+            <p>Standar hotel: tahan lama, higienis, support konsisten.</p>
+            <div class="card-actions justify-end">
+              <span class="badge badge-neutral">Hotel & Project</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 text-center" data-aos="fade-up">
+        <a href="#kontak" class="btn btn-lg rounded-full border-none"
+          style="background:var(--navy);color:white">Konsultasi Pilih Kasur</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEKNOLOGI & MATERIAL -->
+  <section id="teknologi" class="py-16">
+    <div class="max-w-screen-xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Teknologi & Material</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="p-5 rounded-xl border bg-white dark:bg-gray-800" data-aos="fade-up">
+          <h4 class="font-semibold">Memory Foam</h4>
+          <p class="text-body">Viscoelastic responsif terhadap tekanan & suhu tubuh.</p>
+          <span class="text-violet text-sm font-semibold">Pressure Relief</span>
+        </div>
+        <div class="p-5 rounded-xl border bg-white dark:bg-gray-800" data-aos="fade-up" data-aos-delay="100">
+          <h4 class="font-semibold">Latex Alami</h4>
+          <p class="text-body">Anti tungau, sirkulasi udara baik, daya pantul stabil.</p>
+          <span class="text-gold text-sm font-semibold">Natural & Hygienic</span>
+        </div>
+        <div class="p-5 rounded-xl border bg-white dark:bg-gray-800" data-aos="fade-up" data-aos-delay="200">
+          <h4 class="font-semibold">Pocket Spring</h4>
+          <p class="text-body">Gerak independen, minim gangguan saat pasangan bergerak.</p>
+          <span class="text-violet text-sm font-semibold">Motion Isolation</span>
+        </div>
+        <div class="p-5 rounded-xl border bg-white dark:bg-gray-800" data-aos="fade-up" data-aos-delay="300">
+          <h4 class="font-semibold">Cooling Cover</h4>
+          <p class="text-body">Kain micro-porous dengan sensasi sejuk (cool-touch).</p>
+          <span class="text-gold text-sm font-semibold">Cool-Touch Knit</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS & PARTNERS -->
+  <section id="clients" class="py-16 bg-white dark:bg-gray-800">
+    <div class="max-w-screen-xl mx-auto px-6">
+      <div class="flex items-end justify-between mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold">Clients & Partners</h2>
+        <a href="#kontak" class="link text-violet">Ajukan Kerja Sama</a>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center">
+        <div class="glass p-4 rounded-xl flex items-center justify-center" data-aos="flip-up">
+          <img src="logo client 2.png" alt="Client 1" class="h-18" />
+        </div>
+        <div class="glass p-4 rounded-xl flex items-center justify-center" data-aos="flip-up" data-aos-delay="50">
+          <img src="logo hotel1.jpeg" alt="Client 2" class="h-18" />
+        </div>
+        <div class="glass p-4 rounded-xl flex items-center justify-center" data-aos="flip-up" data-aos-delay="100">
+          <img src="logoclient 3.jpeg" alt="Client 3" class="h-15" />
+        </div>
+        <div class="glass p-4 rounded-xl flex items-center justify-center" data-aos="flip-up" data-aos-delay="150">
+          <img src="logo client4.png" alt="Client 4" class="h-18" />
+        </div>
+        <div class="glass p-4 rounded-xl flex items-center justify-center" data-aos="flip-up" data-aos-delay="200">
+          <img src="logo client 5.jpg" alt="Client 5" class="h-18" />
+        </div>
+      </div>
+      <p class="mt-6" data-aos="fade-up">
+        Melayani proyek <span class="text-gold font-semibold">hotel</span>, <span
+          class="text-gold font-semibold">apartemen</span>, dan <span class="text-gold font-semibold">korporasi</span>
+        di berbagai kota besar.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERTIFIKASI & AWARDS -->
+  <section id="sertifikasi" class="py-16">
+    <div class="max-w-screen-xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Sertifikasi & Penghargaan</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card bg-white dark:bg-gray-800 border shadow" data-aos="fade-up">
+          <div class="card-body">
+            <h3 class="card-title">SNI 06-XXXX</h3>
+            <p class="text-body">Standar kualitas bahan kasur dan proses produksi.</p>
+            <span class="text-violet text-sm font-semibold">National Standard</span>
+          </div>
+        </div>
+        <div class="card bg-white dark:bg-gray-800 border shadow" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-body">
+            <h3 class="card-title">ISO 9001</h3>
+            <p class="text-body">Manajemen mutu untuk konsistensi kualitas.</p>
+            <span class="text-gold text-sm font-semibold">Quality System</span>
+          </div>
+        </div>
+        <div class="card bg-white dark:bg-gray-800 border shadow" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-body">
+            <h3 class="card-title">Design Award</h3>
+            <p class="text-body">Desain ergonomis & estetika produk.</p>
+            <span class="text-violet text-sm font-semibold">Ergonomic Design</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-8" data-aos="zoom-in">
+        <a href="prank.html" class="btn rounded-full border-none text-navy" style="background:var(--gold)">
+          Unduh Daftar Sertifikat (PDF)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section id="testimoni" class="py-16 bg-white dark:bg-gray-800">
+    <div class="max-w-screen-xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Apa Kata Mereka</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card shadow-md border" data-aos="fade-up">
+          <div class="card-body">
+            <p class="text-body">“Sejak pakai Memories, punggung saya lebih enak. Tidur cepat nyenyak.”</p>
+            <div class="mt-4 text-sm text-violet font-semibold">— Rani, Bandung</div>
+          </div>
+        </div>
+        <div class="card shadow-md border" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-body">
+            <p class="text-body">“Untuk proyek hotel kami, ketahanannya oke dan tamu puas.”</p>
+            <div class="mt-4 text-sm text-violet font-semibold">— Bima, Jakarta</div>
+          </div>
+        </div>
+        <div class="card shadow-md border" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-body">
+            <p class="text-body">“Servis cepat, garansi jelas. Recommended untuk keluarga.”</p>
+            <div class="mt-4 text-sm text-violet font-semibold">— Sari, Surabaya</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA KONSULTASI -->
+  <section class="py-14">
+    <div class="max-w-screen-xl mx-auto px-6" data-aos="zoom-in">
+      <div class="rounded-2xl p-8 md:p-12 text-center text-navy bg-white shadow-soft">
+        <h3 class="text-2xl md:text-3xl font-extrabold">
+          Butuh Saran Pilih Kasur? <span class="text-violet">Kami Bantu</span>
+        </h3>
+        <p class="mt-2 text-body">Tim kami siap bantu sesuai kebutuhan tidur Anda.</p>
+        <div class="mt-6 flex items-center justify-center gap-4">
+          <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-lg rounded-full border-none text-white"
+            style="background:var(--navy)">
+            Chat WhatsApp
+          </a>
+          <a href="#kontak" class="btn btn-lg btn-outline rounded-full"
+            style="color:var(--violet);border-color:var(--violet)">
+            Form Kontak
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK & LOKASI -->
+  <section id="kontak" class="py-16 bg-white dark:bg-gray-800">
+    <div class="max-w-screen-xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+      <div data-aos="fade-right">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Hubungi Kami</h2>
+        <p class="mb-6">
+          Showroom: Jl.kenangan No. 666, saranjana 10220<br />
+          Email: <a class="link text-violet" href="mailto:hello@memories.co.id">hello@memories.co.id</a><br />
+          Telp: <a class="link text-violet" href="tel:+6285693261984">+62 856-9326-1984</a>
+        </p>
+        <form id="waForm" class="grid gap-3">
+          <input id="nama" type="text" placeholder="Nama" class="input input-bordered" required />
+          <input id="email" type="email" placeholder="Email" class="input input-bordered" required />
+          <textarea id="pesan" placeholder="Pesan / Permintaan Katalog" class="textarea textarea-bordered" rows="4"></textarea>
+          <button type="submit" class="btn rounded-full border-none text-navy"
+            style="background:var(--gold)">Kirim</button>
+        </form>
+      </div>
+      <div class="rounded-xl overflow-hidden border" data-aos="fade-left">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31896.52403128943!2d105.36270123577006!3d-2.1285049759895975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2340c09fc88749%3A0xe6c2f66fc76b9a86!2sAnjai%2C%20Bukit%20Terak%2C%20Kec.%20Simpang%20Teritip%2C%20Kabupaten%20Bangka%20Barat%2C%20Kepulauan%20Bangka%20Belitung!5e0!3m2!1sid!2sid!4v1757389523537!5m2!1sid!2sid"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8" style="background:var(--navy);color:#e6edf6">
+    <div class="max-w-screen-xl mx-auto px-6 flex flex-col md:flex-row gap-6 items-center justify-between">
+      <p>&copy; 2025 <span class="text-gold font-semibold">Memories</span> • All Rights Reserved</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-gold">Instagram</a>
+        <a href="#" class="hover:text-gold">TikTok</a>
+        <a href="#" class="hover:text-gold">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS init -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ once: true, duration: 700, easing: "ease-out-cubic" });</script>
+
+  <script>
+  document.getElementById('waForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var nama = document.getElementById('nama').value;
+    var email = document.getElementById('email').value;
+    var pesan = document.getElementById('pesan').value;
+    var noWa = '6285785233923'; 
+    var text = `Halo, saya ${nama} (${email})%0A${pesan}`;
+    var url = `https://wa.me/${noWa}?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank');
+  });
+</script>
+</body>
+
+</html>
